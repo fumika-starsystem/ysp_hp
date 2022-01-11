@@ -15,7 +15,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
-        FTP_SERVER: ftp.samkirkland.com
-        FTP_USERNAME: myFtpUserName
-        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        FTP_SERVER: ftp.yspsouthaichi.org
+        FTP_USERNAME: yspsouthaichi
+        FTP_PASSWORD: zrvz4171
         ARGS: --delete
