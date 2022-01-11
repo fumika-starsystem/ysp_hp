@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}メンバーインタビュー{% endblock %}
+
+{% block active_action %}sdgs{% endblock %}
+
+{% block contents %}
+
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="clean-walk">
+                <div class="text-center">
+                    <h3>MemberInterview</h3>
+                    <h1>メンバーインタビュー</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/1th-crean-me.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">ボランティアを通して…(20代・女性)</h2>
+                    <p>もともと街にゴミが落ちていたのも気になっていたので</p>
+                    <p>清掃ボランティアには興味があり、友達に誘われた事を</p>
+                    <p>きっかけにこのボランティアに参加しました。</p>
+                    <p>参加していく中で、地域の方に「ありがとう」という</p>
+                    <p>感謝の言葉を頂いたり、ボランティアでない方でも</p>
+                    <p>参加していただいて、人の温かみや繋がりの大切さを</p>
+                    <p>学ぶことが出来ました。これからも、そういった繋がりを</p>
+                    <p>大切にしながら活動していきたいです。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/1th-clean-ao.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">近日公開予定（20代・男性）</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

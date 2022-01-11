@@ -1,0 +1,70 @@
+body,#wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.my-div-style{
+    margin-top:6rem;
+}
+
+.liststyle_row{
+    list-style: none;
+}
+
+.liststyle_row a{
+    text-decoration: none;
+}
+.liststyle_row_col{
+    display: table-cell;
+    padding: 1rem;
+}
+/*.liststyle_row_col::before{
+    border-left: 1px solid red;
+    content: "";
+}*/
+
+.schedule_google{
+    margin: 1rem;
+    width: 100%;
+}
+
+.action-col{
+    width: 100%;
+}
+
+img .action-photo{
+    width: 100%;
+}
+
+.float-style{
+    float: left;
+}
+
+.youtube{
+    overflow: hidden;
+}
+
+.interview-contents{
+    margin: auto;
+    width: 800px;
+    padding: 1rem;
+}
+
+h3 .interview-contents{
+    color: dimgray;
+    border-bottom: solid;
+}
+
+.interview-contents-row{
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.omote-inter-img{
+    padding-bottom: 4rem;
+}

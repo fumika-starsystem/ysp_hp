@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}過去のニュース{% endblock %}
+
+{% block active_oldnews %}oldnews{% endblock %}
+
+{% block contents %}
+
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="news-text text-center">
+                <h3>oldnews</h3>
+                <h1>過去のニュース</h1>
+            </div>
+            {% for ysp in ysp_list %}
+                <div class="oshirase">
+                      <div class="liststyle">
+                          <div class="liststyle_row">
+                              <a href="{% url 'ysp:news_detail' ysp.pk %}">
+                                  <span class="liststyle_row_console">{{ ysp.created_at }}</span>
+                                  <span class="liststyle_row_col"> {{ ysp.title }}</span>
+                              </a>
+                          </div>
+                      </div>
+                </div>
+            {% empty %}
+                <p>お知らせがありません。</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}活動実績{% endblock %}
+
+{% block active_action %}achievement{% endblock %}
+
+{% block contents %}
+
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="clean-walk">
+                <div class="text-center">
+                    <h3>Achievement</h3>
+                    <h1>その他活動実績</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/nakaku-hp.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">中区ホームページに活動掲載</h2>
+                    <p>名古屋市中区の公式ホームページに私たちの活動が</p>
+                    <p>紹介されました！！自分達の行ってきた活動をこうして</p>
+                    <p>紹介して頂けて、とても嬉しく感じると共に、</p>
+                    <p>感謝の気持ちでいっぱいです。今後もより多くの応援を頂きながら</p>
+                    <p>その声に全力で応えていきます！</p>
+                    <a class="" href="https://www.city.nagoya.jp/naka/page/0000119726.html">詳しくはこちらから</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/IMG_radio.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">ラジオ出演!!</h2>
+                    <p>我らがYSP代表の表リーダーが</p>
+                    <p>この活動に興味を持ってくださった</p>
+                    <p>ラジオ局で出演しました！</p>
+                    <p>今後もいろんな情報をメディアも</p>
+                    <p>通じて発信できるよう尽力します！！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+

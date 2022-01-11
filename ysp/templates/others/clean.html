@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}クリーンウォーキング{% endblock %}
+
+{% block active_action %}news{% endblock %}
+
+{% block contents %}
+
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="clean-walk">
+                <div class="text-center">
+                    <h3>CleanWalking</h3>
+                    <h1>クリーンウォーキング</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/5th-clean211224.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">クリーンウォーキングって？</h2>
+                    <p>地域（名古屋市）の清掃活動のことです！</p>
+                    <p>今までは、矢場公園や熱田神宮、そして名古屋市の</p>
+                    <p>逆パワースポットである池田公園での清掃活動をしてきました。</p>
+                    <p>大規模なクリーンウォーキングは第7回まで行ってまいりました。</p>
+                    <p>コロナ禍に入ってからは大規模なものの開催は控えておりますが、</p>
+                    <p><strong>市の美化推進重点区域</strong>を徹底的に毎週清掃するよう努めてます！！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <div class="my-div-style">
+     <div class="clean-walk">
+         <div class="text-center">
+             <h2 class="display-4">活動実績紹介</h2>
+         </div>
+     </div>
+</div>
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/IMG_8906.JPG' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">プリンセスストーリーとのコラボ！！</h2>
+                    <p>なんと地元アイドルでメジャーデビューした</p>
+                    <p>プリンセスストーリーのメンバーと共に</p>
+                    <p>クリーンウォーキングをしてます！！</p>
+                    <p>ミライオーと共にSDGs貢献のためにも</p>
+                    <p>お互い協力し合い頑張ってます！！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/IMG_meiji.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">明治安田生命様と共に！</h2>
+                    <p>かの有名な保険会社である明治安田生命様と共に</p>
+                    <p>クリーンウォーキングをしてます！！</p>
+                    <p>共に地域を愛していきながらも社会貢献に尽力！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/clean-math.png' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">クリーンウォーキング参加人数推移</h2>
+                    <p>これまでクリーンウォーキングやっていく中で</p>
+                    <p>最大なんと300人の方と集まって活動を</p>
+                    <p>することが出来ました！！</p>
+                    <p>コロナ禍で現在はここまで大規模な活動を</p>
+                    <p>自粛せざるを得ない中ではありますが、</p>
+                    <p>今でもクリーンウォーキングは継続してます！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

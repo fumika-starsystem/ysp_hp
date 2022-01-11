@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}インタビュー{% endblock %}
+
+{% block active_action %}interview{% endblock %}
+
+{% block contents %}
+
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="interview-text text-center">
+                <h3>interview</h3>
+                <h1>インタビュー</h1>
+            </div>
+            <div class="omote-inter text-center">
+                <ul class="interview-row" style="list-style: none;">
+                    <li><a href="{% url 'ysp:omote' %}"><img class="wid-80" src="{% static 'assets/img/omote-interview.jpg' %}"></a></li>
+                    <li><a href="{% url 'ysp:outside' %}"><img class="wid-80" src="{% static 'assets/img/outsider-interview.jpg' %}"></a></li>
+                    <li><a href="{% url 'ysp:member' %}"><img class="wid-80" src="{% static 'assets/img/member-interview.jpg' %}"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

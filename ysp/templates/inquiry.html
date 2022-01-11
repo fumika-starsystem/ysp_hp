@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}お問い合わせ{% endblock %}
+
+{% block active_inquiry %}active{% endblock %}
+
+{% if messages %}
+    <div class="container">
+        <div class="row">
+            <div class="my-div-style w-100">
+                <ul class="messages" style="list-style: none;">
+                    {% for message in massages %}
+                    <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% block contents %}
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="form-title text-center">
+                <h3>contact</h3>
+                <h1>お問い合わせ</h1>
+            </div>
+            <div class="form-careful text-center">
+                <p>後日担当者よりご連絡させて頂きます。</p>
+                <p>なお、ご連絡を差し上げるまでに数日かかる場合がございますので、あらかじめご了承ください。</p>
+                <p>また、迷惑メール対策等を行っているメールアドレスよりご連絡いただいた場合、YspSouthAichiからのメールが届かない場合があります。</p>
+                <p>お手数ですが、設定解除もしくは「gmail.com」を受信可能ドメインに設定してください。</p>
+                <p>※YspSouthAichiは氏名、電子メールアドレスなどの個人情報の悪用や第三者への提供はいたしません。</p>
+            </div>
+
+            <form method="post">
+                {% csrf_token %}
+
+                {{ form.non_field_errors }}
+
+                {% for field in form %}
+                    <div class="form-group row">
+                        <label for="{{ field.id_for_label }}" class="col-sm-4 col-form-label">
+                            <strong>{{ field.label_tag }}</strong>
+                        </label>
+                        <div class="col-sm-8">
+                            {{ field }}
+                            {{ field.errors }}
+                        </div>
+                    </div>
+                {% endfor %}
+
+                <div class="offset-sm-4 col-sm-8">
+                    <button class="btn btn-primary" type="submit">送信</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

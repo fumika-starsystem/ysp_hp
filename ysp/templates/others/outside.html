@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}外部インタビュー{% endblock %}
+
+{% block active_action %}outsideinterview{% endblock %}
+
+{% block contents %}
+
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="clean-walk">
+                <div class="text-center">
+                    <h3>OutsideInterview</h3>
+                    <h1>外部インタビュー</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/princes-story2.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">近日公開予定</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

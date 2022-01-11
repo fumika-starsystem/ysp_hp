@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}YSP南愛知{% endblock %}
+
+{% block header %}
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <h1 class="masthead-heading mb-0">YSP南愛知</h1>
+            <h2 class="masthead-subheading mb-0">日本一元気な愛知を創り</h2>
+            <h2 class="masthead-subheading mb-1">日本の未来を創る！！</h2>
+            <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+        </div>
+    </div>
+</header>
+{% endblock %}
+        <!-- Content section 1-->
+{% block contents %}
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'assets/img/YSPOmote.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">YSP南愛知連合とは？</h2>
+                    <p>国連の定める2030年に向けた具体的な行動指針である</p>
+                    <p>"持続可能な開発目標=<strong>SDGs</strong>"を通して、</p>
+                    <p>『<font color="#ff0000"><strong>日本一元気な愛知を創り、日本の未来を創る</strong></font>』</p>
+                    <p>をテーマに青年学生を中心に</p>
+                    <p>300名の仲間と共に活動してます！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Content section 2-->
+
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid" src="{% static 'assets/img/sdgs_ysp.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">SDG'sの活動について</h2>
+                    <p>『<strong>SDGs de　地方創世カードゲーム</strong>』を開催し、</p>
+                    <p>カードゲームを使いSDGsを楽しく分かり易く</p>
+                    <p>学ぶことの出来る体験会をおこなっています！</p>
+                    <p>また、私たちYSP南愛知連合の目標として</p>
+                    <p>③④⑪⑭を掲げています。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Content section 3-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'assets/img/YSPKoyanagi.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">名古屋クリーンパートナー制度に登録！</h2>
+                    <p>名古屋市が指定している<strong>美化推進重点区域</strong>、</p>
+                    <p>つまり市が清掃してほしい地域に赴いて、</p>
+                    <p>清掃活動をしています！</p>
+                    <p>より必要な場所での活動清掃をして</p>
+                    <p>まちを美しくしていきます！！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

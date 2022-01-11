@@ -1,0 +1,45 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}活動内容{% endblock %}
+
+{% block active_action %}active{% endblock %}
+
+{% block contents %}
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="action-text text-center">
+                <h3>action</h3>
+                <h1>活動内容</h1>
+            </div>
+            <div class="action-contents">
+                <div class="clean-walking action-col">
+                    <img class="action-pthoto" src="{% static 'assets/img/clean-me.jpg'%}" style="width:100%;">
+                    <a class="btn btn-primary1 btn-xl rounded-pill mt-6" href="{% url 'ysp:clean' %}">クリーンウォーキング（清掃活動）</a>
+                </div>
+                <div class="sdgs-card">
+                    <img class="action-pthoto" src="{% static 'assets/img/sdgs-card.jpg'%}" style="width:100%;">
+                    <a class="btn btn-primary1 btn-xl rounded-pill mt-6" href="{% url 'ysp:sdgs' %}">SDGs講座（SDGs de カードゲーム）</a>
+                </div>
+                <div class="other-action">
+                    <img class="action-pthoto" src="{% static 'assets/img/IMG_miraioh.jpg'%}" style="width:100%;">
+                    <a class="btn btn-primary1 btn-xl rounded-pill mt-6" href="{% url 'ysp:achieve' %}">その他活動実績</a>
+                </div>
+            </div>
+            </div>
+            <h5>活動紹介動画</h5>
+            <div class="youtube">
+                <div class="float-style">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BcudZNYpYvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="float-style">
+                    <img class="action-pthoto" src="{% static 'assets/img/miraioh.png'%}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
