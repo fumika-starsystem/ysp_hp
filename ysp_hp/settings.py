@@ -92,7 +92,7 @@ DATABASES = {
         'NAME': 'ysp_hp',
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': '',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
