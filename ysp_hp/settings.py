@@ -147,9 +147,9 @@ MEDIA_ROOT = '/usr/share/nginx/html/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # さくらVPS SES関連設定
-SAKURA_SES_ACCESS_KEY_ID = os.environ.get('')
-SAKURA_SES_SECRET_ACCESS_KEY = os.environ.get('')
-EMAIL_BACKEND = 'django_ses.SESBackend'
+# SAKURA_SES_ACCESS_KEY_ID = os.environ.get('')
+# SAKURA_SES_SECRET_ACCESS_KEY = os.environ.get('')
+# EMAIL_BACKEND = 'django_ses.SESBackend'
 
 LOGGING = {
     'version': 1,
