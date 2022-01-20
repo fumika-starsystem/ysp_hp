@@ -133,8 +133,8 @@ USE_TZ = True
 
 # nginxはもしかしたら初期状態では入って無い可能性があるので後ほど、teratermでsudo apt install nginxが必要かも。
 # 上記詳細は以下のページへ:https://qiita.com/sakkuntyo/items/807f25f9eb13525eebef
-STATIC_URL = '/usr/share/nginx/html/static/'
-MEDIA_URL = '/usr/share/nginx/html/media/'
+STATIC_ROOT = '/usr/share/nginx/html/static/'
+MEDIA_ROOT = '/usr/share/nginx/html/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
