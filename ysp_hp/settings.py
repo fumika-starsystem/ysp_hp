@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'ysp_hp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ysp_hp',
+        'NAME': 'postgres',
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST': 'localhost',
