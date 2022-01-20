@@ -45,6 +45,12 @@ INSTALLED_APPS = [
 
     'ysp.apps.YspConfig',
     'accounts.apps.AccountsConfig',
+
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+
+    'django_ses',
 ]
 
 MIDDLEWARE = [
