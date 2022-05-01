@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}活動内容{% endblock %}
+
+{% block active_action %}active{% endblock %}
+
+{% block contents %}
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="action-text text-center">
+                <h1>YSP南愛知のHP始動！</h1>
+            </div>
+            <div class="news-style">
+              <p>ようやく<font color="red">YSP南愛知</font>のホームページが始動しました！
+                <br>このサイトでは、最新ニュースを載せたりYSPの活動をどんどん紹介していきます！
+                <br>Twitter,Instagram,Facebookなどもこれから開設していくのでお楽しみに！！</p>
+            </div>
+            <div class="miraioh">
+                <img class="img-fluid" src="{% static 'assets/img/miraiwow.png' %}" alt="..." />
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

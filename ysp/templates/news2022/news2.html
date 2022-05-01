@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}ニュースページ{% endblock %}
+
+{% block active_action %}NewsPage{% endblock %}
+
+{% block contents %}
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="action-text text-center">
+                <h1>YouTubeチャンネル開設！</h1>
+            </div>
+            <div class="news-style">
+              <p>YouTubeチャンネル"MIRAIOH TV"を開設しました。
+                <br>ここから中日本のYSP活動状況をYSPマスコットキャラクターのミライオーくんが、紹介してくれます！
+                <br>是非チャンネル登録・GOODボタン・コメントのほどお待ちしております！
+                <br>このサイトでも、動画投稿時にまた紹介していけたらと思いますので、
+                <br>お見逃しなく！！</p>
+            </div>
+            <div class="miraioh">
+                <p>詳細は、<a href="https://www.youtube.com/channel/UCulNfPf0WW5z6Fi3dqbbwww/featured">こちらのリンク</a>
+                  もしくは、下記のQRコードを読み込んでね！</p>
+                <img class="img-fluid" src="{% static 'assets/img/miraiohTV-QR.png' %}" alt="..." />
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

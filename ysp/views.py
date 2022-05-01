@@ -33,14 +33,9 @@ class ActionView(generic.TemplateView):
     template_name = 'action.html'
 
 
-class NewsView(generic.ListView):
+class NewsView(generic.TemplateView):
     model = Ysp
-    template_name = 'news.html'
-    paginate_by = 5
-
-    def get_queryset(self):
-        yspes = Ysp.objects.filter(user=self.request.user).order_by('-created_at')
-        return yspes
+    template_name = 'news-ysp.html'
 
 
 class IndexView(generic.TemplateView):
@@ -101,3 +96,6 @@ class MemberView(generic.TemplateView):
 
 class OutsideView(generic.TemplateView):
     template_name = "others/outside.html"
+
+class News1View(generic.TemplateView):
+    template_name = "news2022/news1.html"

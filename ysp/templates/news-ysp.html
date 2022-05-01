@@ -1,0 +1,51 @@
+
+{% extends 'base.html' %}
+
+{% block title %}お知らせ{% endblock %}
+
+{% block active_action %}news{% endblock %}
+
+{% block contents %}
+<div class="container">
+    <div class="row">
+        <div class="my-div-style">
+            <div class="news-text text-center">
+                <h3>news</h3>
+                <h1>お知らせ</h1>
+            </div>
+            <div class="oshirase">
+                <h5>新着ニュース</h5>
+                <div class="oshirase">
+                      <ul class="liststyle">
+                        <li class="liststyle_row">
+                            <a href="news3">
+                                <span class="liststyle_row_console">2022/05/01</span>
+                                <span class="liststyle_row_col">GWイベント！お寺deコンサート開催！！</span>
+                            </a>
+                        </li>
+                        <li class="liststyle_row">
+                            <a href="news2">
+                                <span class="liststyle_row_console">2022/05/01</span>
+                                <span class="liststyle_row_col">YouTubeチャンネル開設！</span>
+                            </a>
+                        </li>
+                          <li class="liststyle_row">
+                              <a href="news1">
+                                  <span class="liststyle_row_console">2022/05/01</span>
+                                  <span class="liststyle_row_col">YSP南愛知のHP始動！</span>
+                              </a>
+                          </li>
+                      </ul>
+                </div>
+                  <div class="text-center">
+                    <a class="btn btn-primary btn-xl rounded-pill mt-6" href="{% url 'ysp:oldnews' %}">過去のニュース</a>
+                  </div>
+            </div>
+            <div class="schedule">
+                <iframe class="schedule_google" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=eXNwLnNvdXRoYWljaGkxMDA2QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

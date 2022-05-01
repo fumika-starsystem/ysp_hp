@@ -8,7 +8,7 @@ urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
     path('inquiry/', views.InquiryView.as_view(), name="inquiry"),
     path('action/', views.ActionView.as_view(), name="action"),
-    path('news/', views.NewsView.as_view(), name="news"),
+    path('news/', views.NewsView.as_view(), name="news-ysp"),
     path('interview/', views.InterviewView.as_view(), name='interview'),
     path('oldnews/', views.OldnewsView.as_view(), name='oldnews'),
     path('news_detail/<int:pk>/', views.NewsDetailView.as_view(), name='news_detail'),
@@ -18,4 +18,6 @@ urlpatterns = [
     path('omote/', views.OmoteView.as_view(), name='omote'),
     path('member/', views.MemberView.as_view(), name='member'),
     path('outside/', views.OutsideView.as_view(), name='outside'),
+    path('news1/', views.OutsideView.as_view(), name='news1'),
+    path('news2/', views.OutsideView.as_view(), name='news2'),
 ]
